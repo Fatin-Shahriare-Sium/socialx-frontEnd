@@ -1,0 +1,27 @@
+
+
+.modal{
+    background-color: rgba(0,0,0,.7)!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logout-modal__text{
+    color: black;
+    font-weight: 700;
+}
+.logout-modal__bottom{
+    margin-top: 3%;
+    
+}
+.modal-content{
+    width: calc(100% + 9vw)!important;
+}
+
+@media screen and (max-width:500px){
+    .modal-content{
+        width:100%!important;
+    }
+ 
+}
