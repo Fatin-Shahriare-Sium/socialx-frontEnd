@@ -69,14 +69,14 @@ const EditProfile: React.FC<EDIT_PROFILE> = ({ handleModal, userId, profileData 
             return
         }
         let overflow = document.getElementById('edit-img-overflow') as HTMLDivElement
-        if (type == 'cover' && imgData.size >= 100000) {
+        if (type == 'cover' && imgData.size >=1500000) {
             return setError({
-                msg: "can't use more than 45kb imgsize for coverphoto",
+                msg: "can't use more than 1.5mb imgsize for coverphoto",
                 color: 'danger'
             })
-        } else if (type == 'small' && imgData.size >= 23000) {
+        } else if (type == 'small' && imgData.size >= 1500000) {
             return setError({
-                msg: "can't use more than 23kb imgsize for profilePic",
+                msg: "can't use more than 1.5mb imgsize for profilePic",
                 color: 'danger'
             })
         }

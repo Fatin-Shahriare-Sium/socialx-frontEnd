@@ -36,9 +36,9 @@ const CreatePost = ({ userPofilePic }) => {
         console.log(e);
         //270,170
         let img = e.target.files[0]
-        if (img.size > 37000) {
+        if (img.size > 1500000) {
             return setUploadError({
-                msg: "Can't upload img more than 17kb",
+                msg: "Can't upload img more than 1.5mb",
                 color: 'warning'
             })
 

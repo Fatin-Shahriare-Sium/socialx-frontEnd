@@ -65,6 +65,12 @@ const UseHandlePost = () => {
                 color: 'danger',
                 ableToCreate: false
             })
+        }else if(textArray.length==0){
+            return setError({
+                msg:"Write something",
+                color:"danger",
+                ableToCreate:false
+            })
         }
 
         let responses = await createPost({
