@@ -103,3 +103,11 @@
 
 
 //notification-icon__container scss
+
+@media screen and (max-width:700px) {
+    .notification-details{
+        width: 67%!important;
+        margin: 5% auto!important;
+    
+    }
+}
